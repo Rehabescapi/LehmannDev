@@ -1,0 +1,16 @@
+:local(.list_inline){
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+:local(.dev_icons){
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+:local(.list_inline_item){
+margin: 0,2,2,0;
+}
