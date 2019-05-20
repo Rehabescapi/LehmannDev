@@ -17,66 +17,68 @@ var menu = {
 };
 
 class SidebarComponent extends Component {
+  setActive = () => {
+    console.log(this.props.location);
+  };
+
+  primeHover = id => {
+    console.log(id);
+  };
+
   render() {
+    console.log(this.props.location);
     return (
       <nav
         className="ui three wide tablet only three wide computer only column "
         id="sideNav"
         style={sideBarStyle}
       >
+        <a
+          className="item centered "
+          href="#page-top"
+          style={{ padding: "10px" }}
+        >
+          <span className="">Jason Lehmann</span>
+          <span className="">
+            <img
+              className="ui rounded  centered image"
+              src={profile}
+              alt="Jason Profile Pic"
+            />
+          </span>
+        </a>
         <div
-          className="ui inverted vertical borderless fuild text menu"
+          className="ui inverted vertical borderless fuild tabular menu"
           style={menu}
         >
-          <a
-            className="item   centered "
-            href="#page-top"
-            style={{ padding: "10px" }}
-          >
-            <span className="">Jason Lehmann</span>
-            <span className="">
-              <img
-                className="ui rounded  centered image"
-                src={profile}
-                alt="Jason Profile Pic"
-              />
-            </span>
-          </a>
-          <button
-            className=""
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="" />
-          </button>
           <div className="" id="navbarSupportedContent">
             <ul className="">
-              <li className="item">
-                <a className="" href="#about">
+              <li className="item ">
+                <a className="ui header" href="#about">
                   About
                 </a>
               </li>
-              <li className="item">
-                <a className="item" href="#experience">
+              <li className=" active item">
+                <a
+                  className="ui   header"
+                  href="#experience"
+                  onMouseOver={() => this.primeHover("experience")}
+                >
                   Experience
                 </a>
               </li>
               <li className="item">
-                <a className="" href="#education">
+                <a className=" ui header" href="#education">
                   Education
                 </a>
               </li>
               <li className="item">
-                <a className="" href="#skills">
+                <a className="ui header" href="#skills">
                   Skills
                 </a>
               </li>
               <li className="item">
-                <a className="" href="#interests">
+                <a className=" ui header" href="#interests">
                   Interests
                 </a>
               </li>
