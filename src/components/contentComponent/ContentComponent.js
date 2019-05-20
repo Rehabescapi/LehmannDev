@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import Proptypes from "prop-types";
 
+import "./style.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class ContentComponent extends Component {
   render() {
     return (
-      <section className="resume-section" id="about">
-        <div className="my-auto">
+      <section
+        className="ui raised very padded text container border"
+        id="about"
+      >
+        <div className="">
           <h1>
-            Jason
-            <span className="text-primary"> Lehmann</span>
+            <span className="text-primary"> Jason Lehmann</span>
           </h1>
           <div className="subheading">
             Chicago, IL 60640 · (269) 876-8901 · jason@lehmanndev.com

@@ -4,7 +4,10 @@ import Proptypes from "prop-types";
 class EducationComponent extends Component {
   render() {
     return (
-      <section className="resume-section" id="education">
+      <section
+        className="ui raised very padded text container border"
+        id="education"
+      >
         <div className="my-auto">
           <h2 className="mb-5">Education</h2>
 

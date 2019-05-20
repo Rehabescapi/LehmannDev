@@ -1,123 +1,122 @@
-import React , {Component } from 'react'
+import React, { Component } from "react";
 
-import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ULVert = styled.ul`
-list-style-type: none;
+  list-style-type: none;
 `;
 const IconUL = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`;
 
-list-style-type: none;
-margin : 0;
-padding : 0;
-    `;
-
-    const IconLI = styled.li`
-   display : inline;
-   padding-left : 1em;
-   &:hover{
-     color:#BD5D38;
-   }
-    `;
-    
+const IconLI = styled.li`
+  display: inline;
+  padding-left: 1em;
+  &:hover {
+    color: #bd5d38;
+  }
+`;
 
 class SkillsComponent extends Component {
-
-    render(){
-
-        return (
-
-
-            <section className="resume-section  d-flex flex-column" id="skills">
+  render() {
+    return (
+      <section
+        className="resume-section  ui raised very padded text container border"
+        id="skills"
+      >
         <div className="my-auto">
           <h2 className="mb-5">Skills</h2>
 
-          <div className="subheading mb-3">Programming Languages &amp; Tools</div>
+          <div className="subheading mb-3">
+            Programming Languages &amp; Tools
+          </div>
           <IconUL classname="dev-icons">
             <IconLI>
-              <FontAwesomeIcon icon={['fab', 'html5']} size="3x"/>
+              <FontAwesomeIcon icon={["fab", "html5"]} size="3x" />
             </IconLI>
             <IconLI>
-             <FontAwesomeIcon size="3x" icon={['fab','css3-alt']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "css3-alt"]} />
             </IconLI>
             <IconLI>
-             <FontAwesomeIcon size="3x" icon={['fab', 'wordpress']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "wordpress"]} />
             </IconLI>
             <IconLI>
-              <FontAwesomeIcon size="3x" icon={['fab', 'js-square']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "js-square"]} />
             </IconLI>
             <IconLI>
-             <FontAwesomeIcon size="3x" icon={['fab', 'react']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "react"]} />
             </IconLI>
             <IconLI>
-             
-              <FontAwesomeIcon size="3x" icon={['fab', 'node-js']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "node-js"]} />
             </IconLI>
             <IconLI>
-            <FontAwesomeIcon size="3x" icon={['fab', 'npm']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "npm"]} />
             </IconLI>
-           
+
             <IconLI>
-            <FontAwesomeIcon size="3x" icon={['fab', 'github']}/>
-            </IconLI>
-            <IconLI>
-            <FontAwesomeIcon size="3x" icon={['fab', 'bitbucket']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "github"]} />
             </IconLI>
             <IconLI>
-            <FontAwesomeIcon size="3x" icon={['fab', 'cpanel']}/>
-            </IconLI>
-           
-            <IconLI>
-            <FontAwesomeIcon size="3x" icon={['fab', 'linux']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "bitbucket"]} />
             </IconLI>
             <IconLI>
-            <FontAwesomeIcon size="3x" icon={['fab', 'trello']}/>
+              <FontAwesomeIcon size="3x" icon={["fab", "cpanel"]} />
+            </IconLI>
+
+            <IconLI>
+              <FontAwesomeIcon size="3x" icon={["fab", "linux"]} />
+            </IconLI>
+            <IconLI>
+              <FontAwesomeIcon size="3x" icon={["fab", "trello"]} />
             </IconLI>
           </IconUL>
 
           <div className="">Workflow</div>
           <ULVert>
             <li>
-            <FontAwesomeIcon  icon={['fas', 'check']}/>
-              Mobile-First, Responsive Design</li>
+              <FontAwesomeIcon icon={["fas", "check"]} />
+              Mobile-First, Responsive Design
+            </li>
             <li>
-            <FontAwesomeIcon  icon={['fas', 'check']}/>
-              Cross Browser Testing &amp; Debugging</li>
+              <FontAwesomeIcon icon={["fas", "check"]} />
+              Cross Browser Testing &amp; Debugging
+            </li>
             <li>
-            <FontAwesomeIcon  icon={['fas', 'check']}/>
-              Cross Functional Teams</li>
+              <FontAwesomeIcon icon={["fas", "check"]} />
+              Cross Functional Teams
+            </li>
             <li>
-            <FontAwesomeIcon  icon={['fas', 'check']}/>
-              Agile Development &amp; Scrum</li>
-              </ULVert>
+              <FontAwesomeIcon icon={["fas", "check"]} />
+              Agile Development &amp; Scrum
+            </li>
+          </ULVert>
         </div>
-        <div className="">QA Analyst
+        <div className="">
+          QA Analyst
           <ul className="">
             <li>
-              
-              <i className="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
+              <i className="fa-li fa fa-check" />
+              Mobile-First, Responsive Design
+            </li>
             <li>
-              <i className="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
+              <i className="fa-li fa fa-check" />
+              Cross Browser Testing &amp; Debugging
+            </li>
             <li>
-              <i className="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
+              <i className="fa-li fa fa-check" />
+              Cross Functional Teams
+            </li>
             <li>
-              <i className="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
+              <i className="fa-li fa fa-check" />
+              Agile Development &amp; Scrum
+            </li>
           </ul>
         </div>
       </section>
-
-
-
-
-
-
-            )
-        }
-    }
-    export default SkillsComponent
+    );
+  }
+}
+export default SkillsComponent;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import SidebarComponent from "./components/sidebarComponent/SidebarComponent";
 import MainContainer from "./components/MainContainer/MainContainer";
@@ -13,7 +13,7 @@ library.add(fab, faDatabase, fas, faCheck);
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App ui padded grid">
         <Helmet>
           <meta charSet="utf-8" />
           <title> LehmannDev</title>

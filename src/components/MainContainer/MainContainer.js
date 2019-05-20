@@ -9,12 +9,29 @@ import ExperienceComponent from "../ExperienceComponent/ExperienceComponent";
 class MainContainer extends Component {
   render() {
     return (
-      <div id="Main Content">
-        <ContentComponent />
-        {/* <ExperienceComponent/>
-           <EducationComponent/>
-            <SkillsComponent/>
-           <InterestComponent/>*/}
+      <div
+        className="sixteen wide mobile thirteen wide tablet thirteen wide computer right floated column"
+        id="Main Content"
+      >
+        <div className="ui main text segment">
+          <div className="ui  aligned divided list">
+            <div className="item">
+              <ContentComponent />
+            </div>
+            <div className="item">
+              <ExperienceComponent />
+            </div>
+            <div className="item">
+              <EducationComponent />
+            </div>
+            <div className="item">
+              <SkillsComponent />
+            </div>
+            <div className="item">
+              <InterestComponent />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
