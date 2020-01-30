@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Proptypes from "prop-types";
 
 class ExperienceComponent extends Component {
   render() {

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Proptypes from "prop-types";
 
 class InterestComponent extends Component {
   render() {
@@ -23,9 +22,8 @@ class InterestComponent extends Component {
           <h3>Movie App</h3>
           <p>
             {" "}
-            Movie Application where I took the inital look of{" "}
-            <a>Movie Application</a> and refactored it into a React-Redux
-            project.
+            Movie Application where I took the inital look of Movie Application
+            and refactored it into a React-Redux project.
           </p>
         </div>
       </section>

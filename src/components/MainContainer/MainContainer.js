@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Proptypes from "prop-types";
+
 import InterestComponent from "../InterestComponent/InterestComponent";
 import ContentComponent from "../contentComponent/ContentComponent";
 import SkillsComponent from "../SkillsComponent/SkillsComponent";
