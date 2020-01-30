@@ -15,14 +15,28 @@ var sideBarStyle = {
 var menu = {
   color: "black"
 };
-
+const categories = [
+  { name: "about", label: "About" },
+  { name: "experience", label: "Experience" },
+  { name: "education", label: "Education" },
+  { name: "skills", label: "Skills" },
+  { name: "interests", label: "Interests" }
+];
 class SidebarComponent extends Component {
-  setActive = () => {
-    console.log(this.props.location);
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = { active: "about" };
+  }
 
   primeHover = id => {
     console.log(id);
+  };
+
+  isActive = id => {
+    console.log(this.state.active);
+    console.log(id);
+    return id === this.state.active ? "active" : id;
   };
 
   render() {
@@ -53,35 +67,19 @@ class SidebarComponent extends Component {
         >
           <div className="" id="navbarSupportedContent">
             <ul className="">
-              <li className="item ">
-                <a className="ui header" href="#about">
-                  About
-                </a>
-              </li>
-              <li className=" active item">
-                <a
-                  className="ui   header"
-                  href="#experience"
-                  onMouseOver={() => this.primeHover("experience")}
-                >
-                  Experience
-                </a>
-              </li>
-              <li className="item">
-                <a className=" ui header" href="#education">
-                  Education
-                </a>
-              </li>
-              <li className="item">
-                <a className="ui header" href="#skills">
-                  Skills
-                </a>
-              </li>
-              <li className="item">
-                <a className=" ui header" href="#interests">
-                  Interests
-                </a>
-              </li>
+              {categories.map(({ name, label }) => (
+                <li key={name} className={`item ${this.isActive(name)}`} on>
+                  <a
+                    className="ui header"
+                    href={`#${name}`}
+                    onClick={() => this.setState({ active: name })}
+                    onMouseOver={() => this.primeHover(name)}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+              ]
             </ul>
           </div>
         </div>
