@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "@reach/router";
 import profile from "./img/profile.jpg";
 
 var sideBarStyle = {
@@ -60,13 +60,14 @@ class SidebarComponent extends Component {
             <ul className="">
               {categories.map(({ name, label }) => (
                 <li key={name} className={`item ${this.isActive(name)}`} on>
-                  <div
+                  <Link
+                    to={`/${name}`}
                     className="ui header"
                     onClick={() => this.props.onActiveChange(name)}
                     onMouseOver={() => this.primeHover(name)}
                   >
                     {label}
-                  </div>
+                  </Link>
                 </li>
               ))}
             </ul>
