@@ -11,6 +11,15 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 
 library.add(fab, faDatabase, fas, faCheck);
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { active: "about" };
+  }
+
+  handleChange = newActive => {
+    this.setState({ active: newActive });
+  };
+
   render() {
     return (
       <div className="App ui padded grid">
@@ -18,9 +27,12 @@ class App extends Component {
           <meta charSet="utf-8" />
           <title> LehmannDev</title>
         </Helmet>
-        <SidebarComponent />
+        <SidebarComponent
+          active={this.state.active}
+          onActiveChange={this.handleChange}
+        />
 
-        <MainContainer />
+        <MainContainer active={this.state.active} />
       </div>
     );
   }

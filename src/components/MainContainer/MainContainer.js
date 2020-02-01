@@ -6,6 +6,8 @@ import SkillsComponent from "../SkillsComponent/SkillsComponent";
 import EducationComponent from "../EducationComponent/EducationComponent";
 import ExperienceComponent from "../ExperienceComponent/ExperienceComponent";
 
+const sections = ["about", "experience", "education", "skills", "interests"];
+
 class MainContainer extends Component {
   render() {
     return (
@@ -14,23 +16,15 @@ class MainContainer extends Component {
         id="Main Content"
       >
         <div className="ui main text segment">
-          <div className="ui  aligned divided list">
-            <div className="item">
-              <ContentComponent />
-            </div>
-            <div className="item">
-              <ExperienceComponent />
-            </div>
-            <div className="item">
-              <EducationComponent />
-            </div>
-            <div className="item">
-              <SkillsComponent />
-            </div>
-            <div className="item">
-              <InterestComponent />
-            </div>
-          </div>
+          <ContentComponent />
+
+          <ExperienceComponent />
+
+          <EducationComponent />
+
+          <SkillsComponent />
+
+          <InterestComponent />
         </div>
       </div>
     );

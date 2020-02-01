@@ -23,24 +23,15 @@ const categories = [
   { name: "interests", label: "Interests" }
 ];
 class SidebarComponent extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { active: "about" };
-  }
-
   primeHover = id => {
     console.log(id);
   };
 
   isActive = id => {
-    console.log(this.state.active);
-    console.log(id);
-    return id === this.state.active ? "active" : id;
+    return id === this.props.active ? "active" : id;
   };
 
   render() {
-    console.log(this.props.location);
     return (
       <nav
         className="ui three wide tablet only three wide computer only column "
@@ -69,17 +60,15 @@ class SidebarComponent extends Component {
             <ul className="">
               {categories.map(({ name, label }) => (
                 <li key={name} className={`item ${this.isActive(name)}`} on>
-                  <a
+                  <div
                     className="ui header"
-                    href={`#${name}`}
-                    onClick={() => this.setState({ active: name })}
+                    onClick={() => this.props.onActiveChange(name)}
                     onMouseOver={() => this.primeHover(name)}
                   >
                     {label}
-                  </a>
+                  </div>
                 </li>
               ))}
-              ]
             </ul>
           </div>
         </div>
