@@ -3,14 +3,14 @@ import React, { Component } from "react";
 import "./style.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { PageTransitionWrapper } from "../variants";
+
 class ContentComponent extends Component {
   render() {
     return (
-      <section
-        className="ui raised very padded text container border"
-        id="about"
-      >
-        <div className="">
+      <PageTransitionWrapper>
+        <section className="ui  very padded text container " id="about">
           <h1>
             <span className="text-primary"> Jason Lehmann</span>
           </h1>
@@ -38,8 +38,8 @@ class ContentComponent extends Component {
               <FontAwesomeIcon icon={["fab", "twitch"]} />
             </a>
           </div>
-        </div>
-      </section>
+        </section>
+      </PageTransitionWrapper>
     );
   }
 }

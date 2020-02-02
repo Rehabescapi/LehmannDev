@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Route } from "react-router-dom";
 import "./App.css";
 import SidebarComponent from "./components/sidebarComponent/SidebarComponent";
 import MainContainer from "./components/MainContainer/MainContainer";
@@ -32,7 +32,11 @@ class App extends Component {
           onActiveChange={this.handleChange}
         />
 
-        <MainContainer active={this.state.active} />
+        <Route
+          render={({ location }) => (
+            <MainContainer location={location} active={this.state.active} />
+          )}
+        />
       </div>
     );
   }

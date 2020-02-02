@@ -1,30 +1,14 @@
 import React, { Component } from "react";
-import { Router, Location } from "@reach/router";
-import posed, { PoseGroup } from "react-pose";
+import { Route, Switch } from "react-router-dom";
+
 import InterestComponent from "../InterestComponent/InterestComponent";
 import ContentComponent from "../contentComponent/ContentComponent";
 import SkillsComponent from "../SkillsComponent/SkillsComponent";
 import EducationComponent from "../EducationComponent/EducationComponent";
 import ExperienceComponent from "../ExperienceComponent/ExperienceComponent";
-
+import { AnimatePresence } from "framer-motion";
 const sections = ["about", "experience", "education", "skills", "interests"];
 
-const RouteContainer = posed.div({
-  enter: { opacity: 1, delay: 300, beforeChildren: 300 },
-  exit: { opacity: 0 }
-});
-
-const PosedRouter = ({ children }) => (
-  <Location>
-    {({ location }) => (
-      <PoseGroup>
-        <RouteContainer key={location.key}>
-          <Router location={location}>{children}</Router>
-        </RouteContainer>
-      </PoseGroup>
-    )}
-  </Location>
-);
 class MainContainer extends Component {
   render() {
     return (
@@ -33,17 +17,18 @@ class MainContainer extends Component {
         id="Main Content"
       >
         <div className="ui main text segment">
-          <PosedRouter>
-            <ContentComponent path="/about" />
-
-            <ExperienceComponent path="/experience" />
-
-            <EducationComponent path="/education" />
-
-            <SkillsComponent path="/skills" />
-
-            <InterestComponent path="/interests" />
-          </PosedRouter>
+          <AnimatePresence>
+            <Switch
+              location={this.props.location}
+              key={this.props.location.className}
+            >
+              <Route exact path="/about" component={ContentComponent} />
+              <Route path="/experience" component={ExperienceComponent} />
+              <Route path="/education" component={EducationComponent} />
+              <Route path="/interests" component={InterestComponent} />
+              <Route path="/skills" component={SkillsComponent} />
+            </Switch>
+          </AnimatePresence>
         </div>
       </div>
     );

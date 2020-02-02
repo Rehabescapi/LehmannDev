@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 import profile from "./img/profile.jpg";
 
 var sideBarStyle = {
@@ -23,9 +23,7 @@ const categories = [
   { name: "interests", label: "Interests" }
 ];
 class SidebarComponent extends Component {
-  primeHover = id => {
-    console.log(id);
-  };
+  primeHover = id => {};
 
   isActive = id => {
     return id === this.props.active ? "active" : id;
