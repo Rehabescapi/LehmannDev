@@ -50,14 +50,11 @@ class SidebarComponent extends Component {
             />
           </span>
         </a>
-        <div
-          className="ui inverted vertical borderless fuild tabular menu"
-          style={menu}
-        >
+        <div className="ui inverted vertical borderless  tabular fuild menu">
           <div className="" id="navbarSupportedContent">
             <ul className="">
               {categories.map(({ name, label }) => (
-                <li key={name} className={`item ${this.isActive(name)}`} on>
+                <li key={name} className={`item ${this.isActive(name)} `}>
                   <Link
                     to={`/${name}`}
                     className="ui header"

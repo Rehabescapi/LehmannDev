@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import "./App.css";
 import SidebarComponent from "./components/sidebarComponent/SidebarComponent";
 import MainContainer from "./components/MainContainer/MainContainer";
+import Header from "./components/header/headerComponent";
 import { Helmet } from "react-helmet";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -27,6 +28,7 @@ class App extends Component {
           <meta charSet="utf-8" />
           <title> LehmannDev</title>
         </Helmet>
+        <Header />
         <SidebarComponent
           active={this.state.active}
           onActiveChange={this.handleChange}
