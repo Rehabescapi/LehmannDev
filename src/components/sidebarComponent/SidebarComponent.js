@@ -12,16 +12,14 @@ var sideBarStyle = {
   paddingRight: "20px"
 };
 
-var menu = {
-  color: "black"
-};
 const categories = [
-  { name: "about", label: "About" },
+  { name: "", label: "About" },
   { name: "experience", label: "Experience" },
   { name: "education", label: "Education" },
   { name: "skills", label: "Skills" },
   { name: "interests", label: "Interests" }
 ];
+
 class SidebarComponent extends Component {
   primeHover = id => {};
 
@@ -72,5 +70,9 @@ class SidebarComponent extends Component {
     );
   }
 }
+
+SidebarComponent.defaultProps = {
+  active: ""
+};
 
 export default SidebarComponent;

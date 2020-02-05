@@ -7,7 +7,7 @@ import SkillsComponent from "../SkillsComponent/SkillsComponent";
 import EducationComponent from "../EducationComponent/EducationComponent";
 import ExperienceComponent from "../ExperienceComponent/ExperienceComponent";
 import { AnimatePresence } from "framer-motion";
-const sections = ["about", "experience", "education", "skills", "interests"];
+//const sections = ["about", "experience", "education", "skills", "interests"];
 
 class MainContainer extends Component {
   render() {
@@ -23,7 +23,7 @@ class MainContainer extends Component {
               location={this.props.location}
               key={this.props.location.className}
             >
-              <Route exact path="/about" component={ContentComponent} />
+              <Route exact path="/" component={ContentComponent} />
               <Route path="/experience" component={ExperienceComponent} />
               <Route path="/education" component={EducationComponent} />
               <Route path="/interests" component={InterestComponent} />

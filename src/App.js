@@ -3,7 +3,6 @@ import { Route } from "react-router-dom";
 import "./App.css";
 import SidebarComponent from "./components/sidebarComponent/SidebarComponent";
 import MainContainer from "./components/MainContainer/MainContainer";
-import Header from "./components/header/headerComponent";
 import { Helmet } from "react-helmet";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
