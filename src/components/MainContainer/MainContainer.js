@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-
+import Header from "../header/headerComponent";
 import InterestComponent from "../InterestComponent/InterestComponent";
 import ContentComponent from "../contentComponent/ContentComponent";
 import SkillsComponent from "../SkillsComponent/SkillsComponent";
@@ -16,6 +16,7 @@ class MainContainer extends Component {
         className="sixteen wide mobile thirteen wide tablet thirteen wide computer right floated column"
         id="Main Content"
       >
+        <Header />
         <div className="ui main text segment">
           <AnimatePresence>
             <Switch

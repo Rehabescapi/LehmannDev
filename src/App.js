@@ -28,7 +28,7 @@ class App extends Component {
           <meta charSet="utf-8" />
           <title> LehmannDev</title>
         </Helmet>
-        <Header />
+
         <SidebarComponent
           active={this.state.active}
           onActiveChange={this.handleChange}
