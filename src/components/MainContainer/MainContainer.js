@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "../header/headerComponent";
 import InterestComponent from "../InterestComponent/InterestComponent";
+import BottomNaveComponet from "../BottomNavComponent/BottomNavComponent";
 import ContentComponent from "../contentComponent/ContentComponent";
 import SkillsComponent from "../SkillsComponent/SkillsComponent";
 import EducationComponent from "../EducationComponent/EducationComponent";
@@ -31,6 +32,7 @@ class MainContainer extends Component {
             </Switch>
           </AnimatePresence>
         </div>
+        <BottomNaveComponet left={"left"} right={"right"} />
       </div>
     );
   }
