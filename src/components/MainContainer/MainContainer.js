@@ -24,7 +24,8 @@ class MainContainer extends Component {
               location={this.props.location}
               key={this.props.location.className}
             >
-              <Route exact path="/" component={ContentComponent} />
+              <Route exact path="/" component={AllComponents} />
+              <Route path="/content" component={ContentComponent} />
               <Route path="/experience" component={ExperienceComponent} />
               <Route path="/education" component={EducationComponent} />
               <Route path="/interests" component={InterestComponent} />
@@ -38,3 +39,13 @@ class MainContainer extends Component {
   }
 }
 export default MainContainer;
+
+const AllComponents = () => (
+  <div>
+    <ContentComponent />
+    <ExperienceComponent />
+    <EducationComponent />
+    <InterestComponent />
+    <SkillsComponent />
+  </div>
+);
