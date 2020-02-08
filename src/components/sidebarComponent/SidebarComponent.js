@@ -13,7 +13,7 @@ var sideBarStyle = {
 };
 
 const categories = [
-  { name: "", label: "About" },
+  { name: "about", label: "About" },
   { name: "experience", label: "Experience" },
   { name: "education", label: "Education" },
   { name: "skills", label: "Skills" },
@@ -39,14 +39,13 @@ class SidebarComponent extends Component {
           href="#page-top"
           style={{ padding: "10px" }}
         >
-          <span className="">Jason Lehmann</span>
-          <span className="">
+          <Link to={""} onClick={() => this.props.onActiveChange("main")}>
             <img
               className="ui rounded  centered image"
               src={profile}
               alt="Jason Profile Pic"
             />
-          </span>
+          </Link>
         </a>
         <div className="ui inverted vertical borderless  tabular fuild menu">
           <div className="" id="navbarSupportedContent">

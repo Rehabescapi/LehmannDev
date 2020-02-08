@@ -13,7 +13,7 @@ library.add(fab, faDatabase, fas, faCheck);
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { active: "about" };
+    this.state = { active: "main" };
   }
 
   handleChange = newActive => {
@@ -35,7 +35,11 @@ class App extends Component {
 
         <Route
           render={({ location }) => (
-            <MainContainer location={location} active={this.state.active} />
+            <MainContainer
+              onActiveChange={this.handleChange}
+              location={location}
+              active={this.state.active}
+            />
           )}
         />
       </div>
