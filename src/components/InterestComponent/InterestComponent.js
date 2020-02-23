@@ -14,14 +14,22 @@ class InterestComponent extends Component {
             <p />
             <p />
 
-            <h2>Side Projects</h2>
-            <h3>Coder Dojo Chi</h3>
+            <h2>Volunteering</h2>
+            <h3>We All code</h3>
             <p>
               {" "}
               Local non Profit that teaches children ages 7-17 the basics of
               HTML, CSS, and JS. I make an attempt to particioate on a monthly
               basis.
             </p>
+
+            <h3>Code Platoon -- Julliet</h3>
+            <p>
+              {" "}
+              Assisted with Full stack fundamentals and coding interview
+              questions.
+            </p>
+            <h2>Side Projects</h2>
             <h3>Movie App</h3>
             <p>
               {" "}

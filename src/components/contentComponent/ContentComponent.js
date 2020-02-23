@@ -15,17 +15,19 @@ class ContentComponent extends Component {
             <span className="text-primary"> Jason Lehmann</span>
           </h1>
           <div className="subheading">
-            Chicago, IL 60640 · (269) 876-8901 · jason@lehmanndev.com
+            Chicago, IL 60640 · jason@lehmanndev.com
           </div>
           <p className="lead">
             Hi there, I am a junior full stack developer. Currently employed as
-            a QA analyst at Aspiritech Chicago. I'm currently specializing in
-            automation and employee to employee training teams.{" "}
+            a QA Lead for the Chicago Aspiritech office. I manage two different
+            clients that require exploratory and regression testing. Recently
+            I've become the web Analyst for Trov's AU auto insurance client.
           </p>
           <p>
             {" "}
             Off hours I'm learning ReactJS and some contract web development
-            solving mostly wordpress and back-end dev-ops problems.
+            solving mostly wordpress and basic back-end dev-ops problems. I
+            volunteer for nonprofit called 'We all Code'.
           </p>
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/jlehmanncs/">

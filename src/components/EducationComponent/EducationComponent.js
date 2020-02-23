@@ -26,15 +26,39 @@ class EducationComponent extends Component {
                 </span>
               </div>
             </div>
-
             <div className="resume-item">
               <div className="resume-content mr-auto">
-                <h3>Tribecca Flashpoint Media Arts Academy</h3>
-                <div className="subheading">Forcus in Game Design</div>
+                <h3>Certifications</h3>
+
+                <div className="resume-date text-md-right">
+                  <span className="text-primary">
+                    WCAG Trusted Tester Certifications
+                  </span>
+                  DHS Section 508 Accessibility Trusted Tester — November 2019.
+                </div>
+                <div className="resume-date text-md-right">
+                  <span className="text-primary">
+                    ISTQB Agile Tester certification — February 2019.
+                  </span>
+                </div>
+
+                <div className="resume-date text-md-right">
+                  Tyler Mcginnis React/Redux courseworks.
+                </div>
+                <div className="resume-date text-md-right">
+                  Kent C Dodds Testing Track.
+                </div>
               </div>
-              <div className="resume-date text-md-right">
-                <span className="text-primary">August 2009 - May 2011</span>
-              </div>
+            </div>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-content mr-auto">
+              <h3>Tribecca Flashpoint Media Arts Academy</h3>
+              <div className="subheading">Forcus in Game Design</div>
+            </div>
+            <div className="resume-date text-md-right">
+              <span className="text-primary">August 2009 - May 2011</span>
             </div>
           </div>
         </section>
