@@ -23,8 +23,6 @@ class MainContainer extends Component {
   componentWillUpdate() {}
 
   render() {
-    console.log(this.state);
-    console.log(this.props);
     let links = sections[this.props.active];
     return (
       <div

@@ -12,7 +12,7 @@ const BottomNavComponent = ({ left = "", right = "", onActiveChange }) => (
       )}
     </Menu.Item>
 
-    <Menu.Item class="ui small image">
+    <Menu.Item className="ui small image">
       {right && (
         <Button
           onClick={() => onActiveChange(right)}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import "./App.css";
 import SidebarComponent from "./components/sidebarComponent/SidebarComponent";
 import MainContainer from "./components/MainContainer/MainContainer";
@@ -13,7 +13,8 @@ library.add(fab, faDatabase, fas, faCheck);
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { active: "main" };
+
+    this.state = { active: this.props.location.pathname.slice(1) };
   }
 
   handleChange = newActive => {
@@ -47,4 +48,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
