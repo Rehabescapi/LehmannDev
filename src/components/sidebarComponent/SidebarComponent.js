@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import profile from "./img/profile.jpg";
-
+import { Button, Image } from "semantic-ui-react";
 var sideBarStyle = {
   position: "fixed",
   height: "100%",
@@ -40,30 +40,41 @@ class SidebarComponent extends Component {
           style={{ padding: "10px" }}
         >
           <Link to={""} onClick={() => this.props.onActiveChange("main")}>
-            <img
-              className="ui rounded  centered image"
+            <Image
+              rounded
+              centered
               src={profile}
               alt="Jason Profile Pic"
+              bordered
+              className="profile"
             />
           </Link>
         </a>
-        <div className="ui inverted vertical borderless  tabular fuild menu">
-          <div className="" id="navbarSupportedContent">
-            <ul className="">
-              {categories.map(({ name, label }) => (
-                <li key={name} className={`item ${this.isActive(name)} `}>
-                  <Link
-                    to={`/${name}`}
-                    className="ui header"
-                    onClick={() => this.props.onActiveChange(name)}
-                    onMouseOver={() => this.primeHover(name)}
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+
+        <div className="" id="navbarSupportedContent">
+          <Button.Group
+            inverted
+            vertical
+            borderless
+            tabular
+            fuild
+            menu
+            centered
+            className="ui grey change"
+          >
+            {categories.map(({ name, label }) => (
+              <Button key={name} className={`item ${this.isActive(name)} `}>
+                <Link
+                  to={`/${name}`}
+                  className="ui header"
+                  onClick={() => this.props.onActiveChange(name)}
+                  onMouseOver={() => this.primeHover(name)}
+                >
+                  {label}
+                </Link>
+              </Button>
+            ))}
+          </Button.Group>
         </div>
       </nav>
     );

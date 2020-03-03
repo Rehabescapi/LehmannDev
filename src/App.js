@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { active: this.props.location.pathname.slice(1) };
+    this.state = { active: this.props.location.pathname.slice(1) || "main" };
   }
 
   handleChange = newActive => {

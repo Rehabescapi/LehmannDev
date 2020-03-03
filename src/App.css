@@ -2,3 +2,6 @@
   background: #1b1c1d;
   color: #17aa1c;
 }
+.ui.grey.change button:hover {
+  background-color: aqua !important;
+}
