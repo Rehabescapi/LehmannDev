@@ -20,8 +20,6 @@ const sections = {
   interests: { left: "skills" }
 };
 class MainContainer extends Component {
-  componentWillUpdate() {}
-
   render() {
     let links = sections[this.props.active];
     return (
