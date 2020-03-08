@@ -1,6 +1,16 @@
 /* eslint-disable no-undef */
 describe(" initial Page loads", () => {
-  it("Home page loads ", () => {
-    cy.visit("/");
+  [
+    "/",
+    "/about",
+    "/interests",
+    "/about",
+    "/experience",
+    "/education",
+    "/skills"
+  ].forEach(page => {
+    it("I can visit page loads " + page, () => {
+      cy.visit(page);
+    });
   });
 });
