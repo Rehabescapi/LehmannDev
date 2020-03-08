@@ -16,8 +16,6 @@ class InterestComponent extends Component {
         >
           <div className="my-auto">
             <h2>Interests</h2>
-            <p />
-            <p />
 
             <h2>Volunteering</h2>
             <h3>
