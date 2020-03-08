@@ -9,6 +9,7 @@ import SkillsComponent from "../SkillsComponent/SkillsComponent";
 import EducationComponent from "../EducationComponent/EducationComponent";
 import ExperienceComponent from "../ExperienceComponent/ExperienceComponent";
 import { AnimatePresence } from "framer-motion";
+import { Divider } from "semantic-ui-react";
 //const sections = ["" , "about", "experience", "education", "skills", "interests"];
 
 const sections = {
@@ -27,7 +28,6 @@ class MainContainer extends Component {
         className="sixteen wide mobile thirteen wide tablet thirteen wide computer right floated column"
         id="Main Content"
       >
-        <Header />
         <div className="ui main text segment">
           <AnimatePresence>
             <Switch
@@ -55,11 +55,15 @@ class MainContainer extends Component {
 export default withRouter(MainContainer);
 
 const AllComponents = () => (
-  <div>
+  <div className="fullContent">
     <ContentComponent />
+    <Divider section />
     <ExperienceComponent />
+    <Divider section />
     <EducationComponent />
+    <Divider section />
     <InterestComponent />
+    <Divider section />
     <SkillsComponent />
   </div>
 );

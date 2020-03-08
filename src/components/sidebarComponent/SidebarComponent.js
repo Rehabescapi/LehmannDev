@@ -21,10 +21,6 @@ const categories = [
 ];
 
 class SidebarComponent extends Component {
-  primeHover = id => {
-    console.log(id);
-  };
-
   isActive = id => {
     return id === this.props.active ? "active" : id;
   };
@@ -36,25 +32,26 @@ class SidebarComponent extends Component {
         id="sideNav"
         style={sideBarStyle}
       >
-        <a
+        <Link
           className="item centered "
-          href="#page-top"
-          style={{ padding: "10px" }}
+          to={"/"}
+          onClick={() => this.props.onActiveChange("main")}
         >
-          <Link to={"/"} onClick={() => this.props.onActiveChange("main")}>
-            <Image
-              rounded
-              centered
-              src={profile}
-              alt="Jason Profile Pic"
-              bordered
-              className="profile"
-            />
-          </Link>
-        </a>
+          <Image
+            rounded
+            centered
+            src={profile}
+            alt="Jason Profile Pic"
+            bordered
+            className="profile"
+          />
+        </Link>
 
-        <div className="" id="navbarSupportedContent">
-          <Button.Group inverted vertical fuild className="ui grey change">
+        <div
+          className="ui center aligned secondary segment"
+          id="navbarSupportedContent"
+        >
+          <Button.Group vertical fuild className="ui grey change">
             {categories.map(({ name, label }) => (
               <Button
                 as={Link}
@@ -62,7 +59,6 @@ class SidebarComponent extends Component {
                 key={name}
                 className={`item ${this.isActive(name)} `}
                 onClick={() => this.props.onActiveChange(name)}
-                trigger={this.primeHover(name)}
               >
                 {label}
               </Button>
