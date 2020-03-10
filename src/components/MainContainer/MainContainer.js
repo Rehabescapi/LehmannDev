@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import { withRouter } from "react-router";
-import Header from "../header/headerComponent";
+
 import InterestComponent from "../InterestComponent/InterestComponent";
 import BottomNaveComponet from "../BottomNavComponent/BottomNavComponent";
 import ContentComponent from "../contentComponent/ContentComponent";

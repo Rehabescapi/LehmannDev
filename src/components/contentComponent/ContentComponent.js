@@ -19,6 +19,7 @@ class ContentComponent extends Component {
             <div className="subheading">Chicago, IL · jason@lehmanndev.com</div>
           </Container>
           <Container textAlign="left">
+            <h2>About me</h2>
             <p className="lead">
               Hi there, I am a junior full stack developer. Currently employed
               as a QA Lead for the Chicago Aspiritech office. I manage two

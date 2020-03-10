@@ -1,16 +1,17 @@
 /* eslint-disable no-undef */
 describe(" initial Page loads", () => {
   [
-    "/",
-    "/about",
-    "/interests",
-    "/about",
-    "/experience",
-    "/education",
-    "/skills"
+    { url: "/", section: "About" },
+    { url: "/about", section: "About" },
+    { url: "/interests", section: "Interests" },
+    { url: "/experience", section: "Experience" },
+    { url: "/education", section: "Education" },
+    { url: "/skills", section: "Skills" }
   ].forEach(page => {
-    it("I can visit page loads " + page, () => {
-      cy.visit(page);
+    it("I can visit page loads " + page.url, () => {
+      cy.visit(page.url);
+
+      cy.get("h2").contains(page.section);
     });
   });
 });
