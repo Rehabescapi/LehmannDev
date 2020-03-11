@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-const BottomNavComponent = ({ left = "", right = "about", onActiveChange }) => (
+const BottomNavComponent = ({ left = "", right = "", onActiveChange }) => (
   <Menu fluid widths={2}>
     <Menu.Item>
       {left && (

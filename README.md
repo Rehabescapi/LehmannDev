@@ -7,11 +7,11 @@ On hover on icons
 
 Accessible form.
 Add Cypress Testing.
-Clean up Main summary.
 
 First Pass
 
 Completed
+Clean up About us page.
 Update Experience, Education, Interests Certification.
 Update with a genuine OP photo.
 Fade in/ Fade out Components.

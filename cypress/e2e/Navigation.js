@@ -14,4 +14,8 @@ describe(" initial Page loads", () => {
       cy.get("h2").contains(page.section);
     });
   });
+
+  it("Sidebar buttons work", () => {});
+
+  it("Lower Level buttons work", () => {});
 });

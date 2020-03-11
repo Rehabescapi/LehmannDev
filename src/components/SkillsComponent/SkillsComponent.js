@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PageTransitionWrapper } from "../variants";
+import { IconTypes } from "./IconTypes.js";
 const ULVert = styled.ul`
   list-style-type: none;
 `;
@@ -16,7 +17,6 @@ const IconLI = styled.li`
   display: inline;
   padding-left: 1em;
   &:hover {
-    color: #bd5d38;
   }
 `;
 
@@ -35,44 +35,11 @@ class SkillsComponent extends Component {
               Programming Languages &amp; Tools
             </div>
             <IconUL classname="dev-icons">
-              <IconLI>
-                <FontAwesomeIcon icon={["fab", "html5"]} size="3x" />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "css3-alt"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "wordpress"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "js-square"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "react"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "node-js"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "npm"]} />
-              </IconLI>
-
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "github"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "bitbucket"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "cpanel"]} />
-              </IconLI>
-
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "linux"]} />
-              </IconLI>
-              <IconLI>
-                <FontAwesomeIcon size="3x" icon={["fab", "trello"]} />
-              </IconLI>
+              {IconTypes.map(Icon => (
+                <IconLI>
+                  <FontAwesomeIcon icon={["fab", Icon.key]} size="3x" />
+                </IconLI>
+              ))}
             </IconUL>
 
             <div className="">Workflow</div>
