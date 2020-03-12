@@ -9,14 +9,16 @@ const ULVert = styled.ul`
 `;
 const IconUL = styled.ul`
   list-style-type: none;
-  margin: 0;
+  margin: 10px;
   padding: 0;
 `;
 
 const IconLI = styled.li`
   display: inline;
+  margin 5px;
   padding-left: 1em;
   &:hover {
+    color: ${props => props.Hcolor};
   }
 `;
 
@@ -36,8 +38,8 @@ class SkillsComponent extends Component {
             </div>
             <IconUL classname="dev-icons">
               {IconTypes.map(Icon => (
-                <IconLI>
-                  <FontAwesomeIcon icon={["fab", Icon.key]} size="3x" />
+                <IconLI Hcolor={Icon.color}>
+                  <FontAwesomeIcon icon={[Icon.type, Icon.key]} size="3x" />
                 </IconLI>
               ))}
             </IconUL>
