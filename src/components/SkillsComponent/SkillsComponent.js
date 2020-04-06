@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PageTransitionWrapper } from "../variants";
 import { IconTypes } from "./IconTypes.js";
+import { Popup } from "semantic-ui-react";
+
 const ULVert = styled.ul`
   list-style-type: none;
 `;
@@ -33,18 +35,24 @@ class SkillsComponent extends Component {
           <div className="my-auto">
             <h2 className="mb-5">Skills</h2>
 
-            <div className="subheading mb-3">
+            <h3 className="subheading mb-3">
               Programming Languages &amp; Tools
-            </div>
+            </h3>
             <IconUL classname="dev-icons">
               {IconTypes.map(Icon => (
-                <IconLI Hcolor={Icon.color}>
-                  <FontAwesomeIcon icon={[Icon.type, Icon.key]} size="3x" />
-                </IconLI>
+                <Popup
+                  content={Icon.key}
+                  key={Icon.key}
+                  trigger={
+                    <IconLI Hcolor={Icon.color}>
+                      <FontAwesomeIcon icon={[Icon.type, Icon.key]} size="3x" />
+                    </IconLI>
+                  }
+                />
               ))}
             </IconUL>
 
-            <div className="">Workflow</div>
+            <h3 className="">Workflow</h3>
             <ULVert>
               <li>
                 <FontAwesomeIcon icon={["fas", "check"]} />
@@ -65,7 +73,7 @@ class SkillsComponent extends Component {
             </ULVert>
           </div>
           <div className="">
-            QA Analyst
+            <h3> QA Analyst</h3>
             <ul className="">
               <li>
                 <i className="fa-li fa fa-check" />
@@ -90,4 +98,6 @@ class SkillsComponent extends Component {
     );
   }
 }
+
+//Can I export with WithPageTransition()
 export default SkillsComponent;
