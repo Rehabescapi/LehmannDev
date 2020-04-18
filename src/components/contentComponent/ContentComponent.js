@@ -20,18 +20,20 @@ class ContentComponent extends Component {
           </Container>
           <Container textAlign="left">
             <h2>About me</h2>
-            <p className="lead">
+            <p>
               Hi there, I am a junior full stack developer. Currently employed
-              as a QA Lead for the Chicago Aspiritech office. I manage two
+              as a QA Lead for the Chicago Aspiritech office. There I manage two
               different clients that require exploratory and regression testing.
-              Recently I've become the web Analyst for Trov's AU auto insurance
-              client.
+              My team size fluxuates between 2 to 7 analysts depending on the
+              weeks workload. Since Febuary I have been the web QA Analyst for
+              Trov's product, working in a Kamban style team for an auto
+              insurance web app to be released in June. Recently I've become the
+              web Analyst for Trov's AU auto insurance client.
             </p>
             <p>
-              {" "}
-              Off hours I'm learning ReactJS and some contract web development
-              solving mostly wordpress and basic back-end dev-ops problems.I
-              volunteer for nonprofit called 'We all Code'.
+              Off hours I'm learning ReactJS and providing guidance with
+              Accessibility work. I volunteer for nonprofit called 'We all Code'
+              as a weeked class assistant.
             </p>
             <div className="social-icons">
               <a href="https://www.linkedin.com/in/jlehmanncs/">

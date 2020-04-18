@@ -19,7 +19,13 @@ export const IconTypes = [
   { key: "universal-access", color: "teal", type: "fas" },
   { key: "low-vision", color: "purple", type: "fas" },
   { key: "fire", color: "red", type: "fas" },
-  { key: "apple", color: "grey", type: "fab" }
+  { key: "apple", color: "grey", type: "fab" },
 ];
 
 /*{ key: "linux", color: "black", type: "fab" },*/
+/*
+
+universal access
+
+
+*/

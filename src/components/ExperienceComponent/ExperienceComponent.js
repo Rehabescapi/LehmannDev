@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Container, Divider } from "semantic-ui-react";
 import { PageTransitionWrapper } from "../variants";
 class ExperienceComponent extends Component {
   render() {
@@ -9,36 +10,32 @@ class ExperienceComponent extends Component {
           id="experience"
         >
           <div className="my-auto">
-            <h2 className="mb-5">Experience</h2>
+            <h2>Experience</h2>
 
-            <div className="resume-item d-flex flex-column flex-md-row mb-5">
+            <div className="d-flex flex-column flex-md-row mb-5">
               <div className="resume-content mr-auto">
-                <h3 className="mb-0">Quality Assurance Analyst </h3>
-
-                <h4 className="subheading mb-3">QA Lead -- Trov </h4>
+                <h3>Quality Assurance Analyst </h3>
+                <div className="ui clearing segment">
+                  <h4 className="ui left floated ">QA Lead -- Trov </h4>
+                  <span className=" ui right aligned">
+                    January 2018 - Ongoing
+                  </span>
+                </div>
                 <ul>
                   <li>
-                    Regression testing for Android, iOS, and ReactJS
+                    Regression testing for mobile native and ReactJS web
                     applications.
                   </li>
                   <li>Wrote and edited test cases and test case scenarios.</li>
                   <li>
                     Provided Accessibility feedback for WCAG 2.1 Compatabilty
-                    for webplatform.
+                    for web platform.
                   </li>
-                  <li>
-                    Wrote Cypress automation for multiple web platform
-                    applications.
-                  </li>
-                  <li>
-                    Collaborated with developers and designers to resolve front
-                    end issues on company website.
-                  </li>
+                  <li>Wrote Cypress automation tests for multiple</li>
+                  <li>Assistated with JMeter Performance testing.</li>
                 </ul>
               </div>
-              <div className="resume-date text-md-right">
-                <span className="text-primary">January 2018 - Ongoing</span>
-              </div>
+              <div className="resume-date text-md right"></div>
 
               <h4 className="subheading mb-3">QA Lead -- Basecamp </h4>
               <ul>
@@ -61,7 +58,7 @@ class ExperienceComponent extends Component {
             </div>
           </div>
 
-          <div className="resume-item d-flex flex-column flex-md-row mb-5">
+          <div className=" d-flex flex-column flex-md-row mb-5">
             <div className="resume-content mr-auto">
               <h3 className="mb-0">Contract Wordpress Developer</h3>
               <div className="subheading mb-3">
@@ -80,7 +77,7 @@ class ExperienceComponent extends Component {
             </div>
           </div>
 
-          <div className="resume-item d-flex flex-column flex-md-row">
+          <div className="d-flex flex-column flex-md-row">
             <div className="resume-content mr-auto">
               <h3 className="mb-0">Web Design Intern</h3>
               <div className="subheading mb-3">BDO USA LLP Grand Rapids</div>

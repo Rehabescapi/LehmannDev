@@ -13,7 +13,7 @@ class EducationComponent extends Component {
           <div className="my-auto">
             <h2 className="mb-5">Education</h2>
 
-            <div className="resume-item">
+            <div>
               <div className="resume-content mr-auto">
                 <h3 className="mb-0">Grand Valley State University</h3>
                 <div className="subheading">Bachelor of Science</div>
@@ -26,7 +26,7 @@ class EducationComponent extends Component {
                 </span>
               </div>
             </div>
-            <div className="resume-item">
+            <div>
               <div className="resume-content mr-auto">
                 <h3>Certifications</h3>
 
@@ -52,7 +52,7 @@ class EducationComponent extends Component {
             </div>
           </div>
 
-          <div className="resume-item">
+          <div>
             <div className="resume-content mr-auto">
               <h3>Tribecca Flashpoint Media Arts Academy</h3>
               <div className="subheading">Forcus in Game Design</div>
