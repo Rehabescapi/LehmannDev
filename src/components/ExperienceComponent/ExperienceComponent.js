@@ -5,21 +5,16 @@ class ExperienceComponent extends Component {
   render() {
     return (
       <PageTransitionWrapper>
-        <section
-          className="ui raised very padded text container border"
-          id="experience"
-        >
-          <div className="my-auto">
+        <section id="experience">
+          <div>
             <h2>Experience</h2>
 
-            <div className="d-flex flex-column flex-md-row mb-5">
-              <div className="resume-content mr-auto">
+            <div>
+              <div>
                 <h3>Quality Assurance Analyst </h3>
-                <div className="ui clearing segment">
-                  <h4 className="ui left floated ">QA Lead -- Trov </h4>
-                  <span className=" ui right aligned">
-                    January 2018 - Ongoing
-                  </span>
+                <div>
+                  <h4>QA Lead -- Trov </h4>
+                  <span>January 2018 - Ongoing</span>
                 </div>
                 <ul>
                   <li>
@@ -35,9 +30,8 @@ class ExperienceComponent extends Component {
                   <li>Assistated with JMeter Performance testing.</li>
                 </ul>
               </div>
-              <div className="resume-date text-md right"></div>
 
-              <h4 className="subheading mb-3">QA Lead -- Basecamp </h4>
+              <h4>QA Lead -- Basecamp </h4>
               <ul>
                 <li>
                   Created Reqression suite for Android, iOS, and Web Email
@@ -53,17 +47,15 @@ class ExperienceComponent extends Component {
                 </li>
               </ul>
             </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">August 2019 - Ongoing</span>
+            <div>
+              <span>August 2019 - Ongoing</span>
             </div>
           </div>
 
-          <div className=" d-flex flex-column flex-md-row mb-5">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">Contract Wordpress Developer</h3>
-              <div className="subheading mb-3">
-                AUSM.org, GalaxieChicago, Aspiritech
-              </div>
+          <div>
+            <div>
+              <h3>Contract Wordpress Developer</h3>
+              <div>AUSM.org, GalaxieChicago, Aspiritech</div>
               <ul>
                 <li>Resolved front end design requests at an on-call basis.</li>
                 <li>
@@ -72,19 +64,18 @@ class ExperienceComponent extends Component {
                 </li>
               </ul>
             </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">July 2016 - Ongoing</span>
+            <div>
+              <span>July 2016 - Ongoing</span>
             </div>
           </div>
 
-          <div className="d-flex flex-column flex-md-row">
-            <div className="resume-content mr-auto">
-              <h3 className="mb-0">Web Design Intern</h3>
-              <div className="subheading mb-3">BDO USA LLP Grand Rapids</div>
+          <div>
+            <div>
+              <h3>Web Design Intern</h3>
+              <div>BDO USA LLP Grand Rapids</div>
               <p />
               <ul>
                 <li>
-                  {" "}
                   Developed map application using open street map API on a
                   Sharepoint framework.
                 </li>
@@ -97,8 +88,8 @@ class ExperienceComponent extends Component {
                 </li>
               </ul>
             </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">January 2016 - May 2016</span>
+            <div>
+              <span>January 2016 - May 2016</span>
             </div>
           </div>
         </section>
